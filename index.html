@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crowdfund Campus — Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Crowdfund Campus</h1>
+    <hr />
+    <p class="tagline">Fueling student ideas with community support</p>
+  </header>
+
+  <section class="controls">
+    <button id="loadBtn">View Campaigns (GET request)</button>
+    <input id="searchInput" type="text" placeholder="Search campaigns..." />
+  </section>
+
+  <main>
+    <!-- Updated container ID to match JS -->
+    <div id="campaignsContainer" class="campaign-list"></div>
+  </main>
+
+  <footer>
+    <small>Demo: No payments. Data fetched from a public test API or local demo data.</small>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
