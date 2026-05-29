@@ -110,4 +110,15 @@ function fallbackData() {
     { id: 103, title: 'Open-mic night', description: 'Fund stage and mics for cultural night.', goal: 5000, raised: 2500, percent: 50, img: "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=600&q=60" }
   ];
 }
+function calculateRiskScore(filesChanged) {
+    if (filesChanged > 10) {
+        return "CRITICAL";
+    } else if (filesChanged > 5) {
+        return "HIGH";
+    } else if (filesChanged > 2) {
+        return "MEDIUM";
+    }
+    return "LOW";
+}
 
+console.log(calculateRiskScore(4));
